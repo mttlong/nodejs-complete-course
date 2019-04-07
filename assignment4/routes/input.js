@@ -11,7 +11,7 @@ router.get('/', (req, res, next) => {
     });
   });
 
-router.post('/', (req, res, text) => {
+router.post('/add-users', (req, res, text) => {
     console.log(req.body.title);
     names.push(req.body.title);
     res.redirect('/users');

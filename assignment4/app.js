@@ -14,7 +14,6 @@ const temp = require('./routes/temp');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/temp', temp.routes);
 app.use('/users',userNames.routes);
 app.use(inputName.routes);
 
